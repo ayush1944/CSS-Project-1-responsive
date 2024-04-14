@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* for large desktop  */
+@media only screen and (min-width: 1200px) {
+    #main{
+        height: 100% ;
+        width: 100%;
+        background-color: white;
+    }
+    nav{
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 2.5vw;
+        gap:  6vw;
+    }
+    nav #menu{
+        display: none;
+    }
+    nav h4{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    nav i{
+        background: #000;
+        color: white;
+        padding: 1.1vw;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 2.2vw;
+        text-align: center;
+    }
+    #center{
+        width: 100%;
+        padding: 2vw 2.7vw .12vw 8vw;
+    }
+    #center h1{
+        font-weight: 500;
+        font-size: 8vw;
+        line-height: 9vw;
+    }
+    #center-in{
+        width: 100%;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #center-in p{
+        font-size: 1.5vw; 
+        line-height: 1.8vw;
+    }
+    #right{
+        width: 20%;   
+    }
+    .elem{
+        padding: .8vw 0;
+        border-top: .2vw solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .elem a{
+        color: #000;
+        text-decoration: none;
+        font-size: 2vw; 
+        font-weight: normal;
+    }
+    .elem i{
+        font-size: 2.3vw;
+        opacity: 0;
+    }
+    .elem:hover i{
+        opacity: 1;
+    }
+    .elem:hover a{
+        text-decoration: underline;
+    }
+    #bottom{
+        width: 100%;
+        height: 37.8vh;
+        background-color: red;
+        background-position: 0 16%;
+        background-size: cover;
+        background-image: url(https://images.unsplash.com/photo-1468112014733-deb9e1f8ddd2?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+}
+
+/* for normal desktop  */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    #main{
+        height: 100% ;
+        width: 100%;
+        background-color: white;
+    }
+    nav{
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 2.5vw;
+        gap:  6vw;
+    }
+    nav #menu{
+        display: none;
+    }
+    nav h4{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    nav i{
+        background: #000;
+        color: white;
+        padding: 1.1vw;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 2.2vw;
+        text-align: center;
+    }
+    #center{
+        width: 100%;
+        padding: 2vw 2.7vw .12vw 8vw;
+    }
+    #center h1{
+        font-weight: 500;
+        font-size: 8vw;
+        line-height: 9vw;
+    }
+    #center-in{
+        width: 100%;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #center-in p{
+        font-size: 1.5vw; 
+        line-height: 1.8vw;
+    }
+    #right{
+        width: 20%;   
+    }
+    .elem{
+        padding: .8vw 0;
+        border-top: .2vw solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .elem a{
+        color: #000;
+        text-decoration: none;
+        font-size: 2vw; 
+        font-weight: normal;
+    }
+    .elem i{
+        font-size: 2.3vw;
+        opacity: 0;
+    }
+    .elem:hover i{
+        opacity: 1;
+    }
+    .elem:hover a{
+        text-decoration: underline;
+    }
+    #bottom{
+        width: 100%;
+        height: 37.8vh;
+        background-color: red;
+        background-position: 0 16%;
+        background-size: cover;
+        background-image: url(https://images.unsplash.com/photo-1468112014733-deb9e1f8ddd2?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+}
+/* laptop */
+@media only screen and (min-width: 980px) and (max-width: 1023px){
+        #main{
+            height: 100% ;
+            width: 100%;
+            background-color: white;
+        }
+        nav{
+            width: 100%;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 2.5vw;
+            gap:  6vw;
+        }
+        nav #menu{
+            display: none;
+        }
+        nav h4{
+            font-size: 2.5vw;
+            font-weight: 500;
+        }
+        nav i{
+            background: #000;
+            color: white;
+            padding: 1.1vw;
+            border-radius: 50%;
+            font-weight: 500;
+            font-size: 2.2vw;
+            text-align: center;
+        }
+        #center{
+            width: 100%;
+            padding: 2vw 2.7vw .12vw 8vw;
+        }
+        #center h1{
+            font-weight: 500;
+            font-size: 8vw;
+            line-height: 9vw;
+        }
+        #center-in{
+            width: 100%;
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #center-in p{
+            font-size: 1.5vw; 
+            line-height: 1.8vw;
+        }
+        #right{
+            width: 20%;   
+        }
+        .elem{
+            padding: .8vw 0;
+            border-top: .2vw solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .elem a{
+            color: #000;
+            text-decoration: none;
+            font-size: 2vw; 
+            font-weight: normal;
+        }
+        .elem i{
+            font-size: 2.3vw;
+            opacity: 0;
+        }
+        .elem:hover i{
+            opacity: 1;
+        }
+        .elem:hover a{
+            text-decoration: underline;
+        }
+        #bottom{
+            width: 100%;
+            height: 37.8vh;
+            background-color: red;
+            background-position: 0 16%;
+            background-size: cover;
+            background-image: url(https://images.unsplash.com/photo-1468112014733-deb9e1f8ddd2?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+}
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    #main{
+        height: 100% ;
+        width: 100%;
+        background-color: white;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5vw 3.5vw 1.5vw 4.5vw;
+    }
+    nav h4{
+        display: none;
+    }
+    nav i{
+        background: #000;
+        color: white;
+        padding: 1vw;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 1.1vw;
+    }
+    #center{
+        width: 100%;
+        margin-top:  2vw;
+        margin-bottom:  -.5vw;
+        padding: 1vw 1.5vw .12vw 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #center h1{
+        font-weight: 500;
+        font-size: 6.4vw;
+        line-height: 6.8vw;
+    }
+    #center-in{
+        width: 100%;
+        margin-top: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2vw ;
+    }
+    #center-in p{
+        font-size: 1.5vw; 
+        line-height: 2vw;
+        margin-bottom: 2.5vw;
+    }
+    #right{
+        width: 20%;   
+    }
+    .elem{
+        padding: .4vw 0;
+        border-top: .2vw solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .elem a{
+        color: #000;
+        text-decoration: none;
+        font-size: 2.5vw; 
+        text-align: center;
+        font-weight: normal;
+    }
+    .elem i{
+        font-size: 2vw;
+        opacity: 0;
+    }
+    .elem:hover i{
+        opacity: 1;
+    }
+    .elem:hover a{
+        text-decoration: underline;
+    }
+    #bottom{
+        width: 100%;
+        height: 36.1vh;
+        background-color: red;
+        background-position: 0 16%;
+        background-size: cover;
+        background-image: url(https://images.unsplash.com/photo-1468112014733-deb9e1f8ddd2?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+}
+/* potrait mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #main{
+        height: 100% ;
+        width: 100%;
+        background-color: white;
+    }
+    nav{
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3vw 5vw 3vw 7vw;
+    }
+    nav h4{
+        display: none;
+    }
+    nav i{
+        background: #000;
+        color: white;
+        padding: 1.2vw;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 1.9vw;
+    }
+    #center{
+        width: 100%;
+        margin-top:  8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #center h1{
+        font-weight: 500;
+        font-size: 10vw;
+        line-height: 12vw;
+    }
+    #center-in{
+        width: 100%;
+        margin-top: 4.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #center-in p{
+        font-size: 2.3vw; 
+        line-height:3vw;
+        margin-bottom: 7.2vw;
+    }
+    #right{
+        width: 20%;   
+    }
+    .elem{
+        width:  100%;
+        padding: 2vw 0;
+        border-top: .2vw solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .elem a{
+        width: 100%;
+        color: #000;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2.6vw; 
+        font-weight: normal;
+    }
+    .elem i{
+        font-size: 3vw;
+        opacity: 0;
+    }
+    .elem:hover i{
+        opacity: 1;
+    }
+    .elem:hover a{
+        text-decoration: underline;
+    }
+    #bottom{
+        width: 100%;
+        height: 30vh;
+        background-color: red;
+        background-position: 0 16%;
+        background-size: cover;
+        background-image: url(https://images.unsplash.com/photo-1468112014733-deb9e1f8ddd2?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+}
+/* mobile */
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    #main{
+        height: 100% ;
+        width: 100%;
+        background-color: white;
+    }
+    nav{
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3vw 4vw 3vw 7vw;
+    }
+    nav h4{
+        display: none;
+    }
+    nav i{
+        background: #000;
+        color: white;
+        padding: 2vw;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 2.5vw;
+    }
+    #center{
+        width: 100%;
+        margin-top:  9vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #center h1{
+        font-weight: 500;
+        font-size: 12vw;
+        line-height: 14vw;
+    }
+    #center-in{
+        width: 100%;
+        margin-top: 4.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #center-in p{
+        font-size: 3vw;
+        font-weight: 1;
+        line-height: 4vw;
+        margin-bottom: 7.2vw;
+    }
+    #right{
+        width: 20%;   
+    }
+    .elem{
+        width:  100%;
+        padding: 2vw 0;
+        border-top: .2vw solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .elem a{
+        color: #000;
+        text-decoration: none;
+        font-size: 5vw;
+        text-align: center;
+        white-space: nowrap;
+        font-weight: normal;
+    }
+    .elem i{
+        font-size: 4vw;
+        opacity: 0;
+    }
+    .elem:hover i{
+        opacity: 1;
+    }
+    .elem:hover a{
+        text-decoration: underline;
+    }
+    #bottom{
+        width: 100%;
+        height: 42.9vh;
+        background-color: red;
+        background-position: 0 16%;
+        background-size: cover;
+        background-image: url(https://images.unsplash.com/photo-1468112014733-deb9e1f8ddd2?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+}
